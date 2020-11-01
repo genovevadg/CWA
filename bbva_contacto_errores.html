@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Co-Workers SAS | BBVA | Seguros</title> 
+    <meta name="description" content="Podés realizar online consultas y gestiones sobre nuestros productos, con la facilidad y rapidez que necesitás.">
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <!-- bootstrap.min.css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- font-awesome -->
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <!-- animations -->
+    <link rel="stylesheet" href="css/animation.css">
+    <!-- custom.css -->
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body class="bbva_content bg_blue">
+    <header>
+        <nav>
+            <a class="d-flex justify-content-center" href="index.html">
+                <img class="my-3 img-fluid" src="img/logo.png" alt="Co-Workers SAS | Work outside the box">
+            </a>
+        </nav> 
+    </header>
+    <!-- breadcrumb -->
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb mb-0 container">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="bbva.html">BBVA Seguros</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Contactanos</li>
+        </ol>
+    </nav>
+    <!-- breadcrumb -->
+    <!-- contact -->
+    <div class="jumbotron jumbotron-fluid contact-box">
+        <div class="container mb-5" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true">
+                    <h2 class="text-white mb-4">Te ayudamos a encontrar el seguro que estás necesitando</h2>
+                    <p class="text-white mb-5">Escribinos para saber qué seguro te interesa y ver cómo podemos ayudarte.
+                        <br>
+                        <small class="text-grey">Los campos con <i class="fa fa-asterisk"></i> son obligatorios</small>
+                    </p>
+                    
+                    <form>
+                    	<div class="row">
+	                        <div class="form-group col-md-4 is-invalid">
+	                            <label for="name" required>Nombre <i class="fa fa-asterisk"></i></label>
+	                            <input type="text" class="form-control form-control-lg" id="name" placeholder="Ingresa tu nombre">
+                                <small>El campo <strong>Nombre</strong> no puede estar vacío</small>
+                            </div>
+                            <div class="form-group col-md-4 is-invalid">
+	                            <label for="phone">Teléfono <i class="fa fa-asterisk"></i></label>
+	                            <input type="tel" class="form-control form-control-lg" id="phone" placeholder="Ingresa un teléfono de contacto">
+                                <small>El número de teléfono no puede tener letras</small>
+                            </div>
+	                        <div class="form-group col-md-4 is-invalid">
+	                            <label for="Email">Email</label>
+	                            <input type="email" class="form-control form-control-lg" id="Email" placeholder="Ingresa tu email">
+                                <small>El email ingresado no tiene un formato válido</small>
+                            </div>
+	                    </div>
+	                    <div class="form-group  my-4 is-invalid">
+	                        <label for="message">Mensaje <i class="fa fa-asterisk"></i></label>
+	                        <textarea class="form-control" id="message" rows="5" placeholder="Comentanos el motivo de tu mensaje"></textarea>
+                            <small>El campo <strong>Mensaje</strong> no puede estar vacío</small>
+                        </div>
+                        <div class="text-right">
+                            <button type="submit" class="my-4 btn btn-outline-primary">Contactarse</button>
+                        </div>        
+                    </form>
+        </div>
+    </div>
+    <!-- contact -->
+
+    <!-- footer -->
+    <footer>
+        <div class="container py-3">
+            <div class="row justify-content-between">
+            	<div class="col-md-8 align-self-center text-center text-md-left my-2 overline">
+                    © 2020 creado para Co-Workers SAS.
+                </div>
+                <ul class="col-md-4 list-unstyled align-self-center text-center text-md-left my-2">
+                    <li class="overline">Ponete EN CONTACTO</li>
+                    <li><i class="fa fa-envelope mr-2"></i><a href="mailto:bbva@cwa.com.ar?subject=Consulta desde el sitio web sobre seguros BBVA">bbva@cwa.com.ar</a></li>
+                    <li><i class="fa fa-whatsapp mr-2"></i>+11 3613-9243</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- footer -->
+    
+    <!-- JS -->
+    <script src="js/aos.js"></script>
+    <script>
+      AOS.init({
+      });
+    </script>
+</body>
+
+</html>
