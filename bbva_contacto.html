@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="css/custom.css">
     <!-- Jquery Sender-->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <!-- <validator.js-->
+    <script src="js/validator.js"></script>
 </head>
 
 <body class="bbva_content bg_blue">
@@ -47,7 +49,7 @@
                 <br>
                 <small class="text-grey">Los campos con <i class="fa fa-asterisk"></i> son obligatorios</small>
             </p>
-                    <form action="mailer.php" method="post">
+                    <form action="mailer.php" method="post" id="contact-form">
                     	<div class="row">
 	                        <div class="form-group col-md-4">
 	                            <label for="name">Nombre <i class="fa fa-asterisk"></i></label>
@@ -69,7 +71,7 @@
                         <input name="contact-type" style="visibility: hidden;" value="bbva@cwa.com.ar"></input>
                         <input name="subject" style="visibility: hidden;" value="Consulta desde el sitio web sobre seguros BBVA">
                         <div class="text-right">
-                            <button type="submit" class="my-4 btn btn-outline-primary">Contactarse</button>
+                            <button type="submit" class="my-4 btn btn-outline-primary sumbit-form">Contactarse</button>
                         </div>        
                     </form>
         </div>
