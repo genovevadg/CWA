@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="css/animation.css">
     <!-- custom.css -->
     <link rel="stylesheet" href="css/custom.css">
+    <!-- Jquery Sender-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
 </head>
 
 <body class="bbva_content bg_blue">
@@ -45,25 +47,27 @@
                 <br>
                 <small class="text-grey">Los campos con <i class="fa fa-asterisk"></i> son obligatorios</small>
             </p>
-                    <form>
+                    <form action="mailer.php" method="post">
                     	<div class="row">
 	                        <div class="form-group col-md-4">
 	                            <label for="name">Nombre <i class="fa fa-asterisk"></i></label>
-	                            <input type="text" class="form-control form-control-lg" id="name" placeholder="Ingresa tu nombre">
+	                            <input type="text" name="name" class="form-control form-control-lg" id="name" placeholder="Ingresa tu nombre">
                             </div>
                             <div class="form-group col-md-4">
 	                            <label for="phone">Teléfono <i class="fa fa-asterisk"></i></label>
-	                            <input type="tel" class="form-control form-control-lg" id="phone" placeholder="Ingresa un teléfono de contacto">
+	                            <input type="tel" name="phone" class="form-control form-control-lg" id="phone" placeholder="Ingresa un teléfono de contacto">
 	                        </div>
 	                        <div class="form-group col-md-4">
-	                            <label for="Email">Email</label>
-	                            <input type="email" class="form-control form-control-lg" id="Email" placeholder="Ingresa tu email">
+	                            <label for="email">Email</label>
+	                            <input type="email" name="email" class="form-control form-control-lg" id="email" placeholder="Ingresa tu email">
                             </div>
 	                    </div>
 	                    <div class="form-group my-4">
 	                        <label for="message">Mensaje <i class="fa fa-asterisk"></i></label>
-	                        <textarea class="form-control" id="message" rows="5" placeholder="Comentanos el motivo de tu mensaje"></textarea>
+	                        <textarea name="message" class="form-control" id="message" rows="5" placeholder="Comentanos el motivo de tu mensaje"></textarea>
                         </div>
+                        <input name="contact-type" style="visibility: hidden;" value="bbva@cwa.com.ar"></input>
+                        <input name="subject" style="visibility: hidden;" value="Consulta desde el sitio web sobre seguros BBVA">
                         <div class="text-right">
                             <button type="submit" class="my-4 btn btn-outline-primary">Contactarse</button>
                         </div>        
