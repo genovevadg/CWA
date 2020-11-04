@@ -1,13 +1,21 @@
 <?php
     
     $mailHeaders = "From: " . $_POST["name"] . "<". $_POST["email"] .">\r\n";
-    // echo($_POST["contact-type"]"\r\n");
-    // echo($_POST["subject"]"\r\n");
-    // echo($mailHeaders "\r\n");
-    // echo($_POST["phone"]"\r\n");
+    $from = $_POST["contact-type"];
     
-      if(mail($_POST["contact-type"], $_POST["subject"], $_POST["message"], $mailHeaders)) {
+      if(mail($from, $_POST["subject"], $_POST["message"], $mailHeaders)) {
+        if(strpos($from, 'bbva') !== FALSE){
+          header('Location: http://cwa.com.ar/bbva_contacto_exito.html', true, 301);
+        } else {
+          header('Location: http://cwa.com.ar/jelper_contacto_exito.html', true, 301);
+        }
+        exit();
       } else {
-
+          if(strpos($from, 'bbva') !== FALSE){
+            header("Location: http://cwa.com.ar//bbva_contacto_errorInesperado.html", true, 301);
+          } else {
+            header("Location: http://cwa.com.ar/jelper_contacto_errorInesperado.html", true, 301);
+          }
+        exit();
       }
 ?>
