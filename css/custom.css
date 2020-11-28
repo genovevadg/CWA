@@ -266,7 +266,7 @@ footer li {
 }
 
 .feature.skrew {
-  background: linear-gradient(168deg, #ffffff 55%, #58dbac 0);
+  background: linear-gradient(168deg, #fff 55%, #58dbac 0);
 }
 
 /* CONTACTO */
@@ -318,7 +318,7 @@ label {
 /* JELPER */
 .card.featured {
   background: #480357;
-  color: #ffffff;
+  color: #fff;
 }
 
 .table_section .price strong {
